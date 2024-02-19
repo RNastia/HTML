@@ -1,3 +1,29 @@
-.swiper {
+body {
     display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 125px;
+    background-color: #b83e56;
+    margin-top: 8px;
+}
+
+.input-area {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.Enter {
+    width: 91px;
+}
+
+#age {
+    width: 231px;
+}
+
+.label-age {
+    padding-bottom: 9px;
 }
