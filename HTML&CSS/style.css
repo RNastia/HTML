@@ -1,0 +1,104 @@
+body {
+    background-color: #d8dcfe;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container-inputs {
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    color: #4f1a5e;
+}
+
+input {
+    width: 300px;
+}
+
+#submit {
+    margin-top: 31px;
+    background-color: #cfa4db;
+    border-width: 0.01px;
+    border-color: #f6ebf9;
+}
+
+.block {
+    width: 100%;
+    height: 19px;
+    background-color: #cfa4db;
+    margin-bottom: 21px;
+}
+
+.infa {
+    color: #4f1a5e;
+    display: flex;
+    justify-content: space-around;
+}
+
+#kg {
+    text-align: center;
+}
+
+.kg {
+    text-align: center;
+    margin-top: 25px;
+    color: #773364;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons>button {
+    width: 121px;
+    height: 19px;
+    margin-top: 29px;
+    background-color: #cfa4db;
+    border-width: 0.01px;
+    border-color: #f6ebf9;
+}
+
+.name4{
+    text-align: center;
+    font-style: italic;
+    color: #4f1a5e;
+}
+
+.block2 {
+    width: 100%;
+    height: 5px;
+    background-color: #cfa4db;
+    margin-bottom: 21px;
+    margin-top: 9px;
+}
+
+.buttons_words {
+    display: flex;
+    justify-content: space-around;
+}
+
+.name5{
+    text-align: center;
+    font-style: italic;
+    color: #4f1a5e;}
+
+.buttons_words>button {
+    width: 225px;
+    height: 19px;
+    margin-top: 29px;
+    background-color: #cfa4db;
+    border-width: 0.01px;
+    border-color: #f6ebf9;
+}
+
+.word {
+    text-align: center;
+    margin-top: 15px;
+    color: #773364;
+}
+
+#word {
+    text-align: center;
+}
