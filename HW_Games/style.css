@@ -28,8 +28,38 @@ body {
     padding-bottom: 9px;
 }
 
-#view {
+.accordion-area {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+img {
+    height: 250px;
+    width: 100%;
+
 }
