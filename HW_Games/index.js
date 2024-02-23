@@ -1,4 +1,4 @@
-const kids = {
+const kid = {
     games: [
         {
             name: "Tetris",
@@ -15,7 +15,7 @@ const kids = {
     ]
 };
 
-const teens = {
+const teen = {
     games: [
         {
             name: "Stray",
@@ -32,7 +32,7 @@ const teens = {
     ]
 }
 
-const youngAdults = {
+const youngAdult = {
     games: [
         {
             name: "Little nightmares",
@@ -49,7 +49,7 @@ const youngAdults = {
     ]
 }
 
-const adults = {
+const adult = {
     games: [
         {
             name: "Resident evil village",
@@ -67,10 +67,10 @@ const adults = {
 }
 
 const categories = {
-    kids,
-    teens,
-    youngAdults,
-    adults
+    kid,
+    teen,
+    youngAdult,
+    adult
 }
 
 
@@ -115,10 +115,10 @@ function ageGame() {
     const age = inputAge.value;
 
     switch (true) {
-        case age >= 1 && age <= 10: viewGames(categories.kids.games); break;
-        case age >= 11 && age <= 16: viewGames(categories.teens.games); break;
-        case age >= 17 && age <= 18: viewGames(categories.youngAdults.games); break;
-        case age > 18: viewGames(categories.adults.games); break;
+        case age >= 1 && age <= 10: viewGames(categories.kid.games); break;
+        case age >= 11 && age <= 16: viewGames(categories.teen.games); break;
+        case age >= 17 && age <= 18: viewGames(categories.youngAdult.games); break;
+        case age > 18: viewGames(categories.adult.games); break;
     }
 }
 

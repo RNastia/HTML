@@ -2,15 +2,15 @@ const kids = {
     games: [
         {
             name: "Tetris",
-            img: "image here"
+            img: "Tetris"
         },
         {
             name: "Angry birds",
-            img: "image here"
+            img: "angryBirds"
         },
         {
             name: "Mario",
-            img: "image here"
+            img: "Mario"
         },
     ]
 };
@@ -19,15 +19,15 @@ const teens = {
     games: [
         {
             name: "Stray",
-            img: "image here"
+            img: "Stray"
         },
         {
             name: "Call of duty",
-            img: "image here"
+            img: "CallOfDuty"
         },
         {
             name: "Detroit become human",
-            img: "image here"
+            img: "Detroit"
         },
     ]
 }
@@ -36,15 +36,15 @@ const youngAdults = {
     games: [
         {
             name: "Little nightmares",
-            img: "image here"
+            img: "Nightmares"
         },
         {
             name: "God of war",
-            img: "image here"
+            img: "GodOfWar"
         },
         {
             name: "Dead space",
-            img: "image here"
+            img: "DeadSpace"
         },
     ]
 }
@@ -53,15 +53,15 @@ const adults = {
     games: [
         {
             name: "Resident evil village",
-            img: "image here"
+            img: "ResidentEvil"
         },
         {
-            name: "The witcher",
-            img: "image here"
+            name: "The Witcher",
+            img: "TheWitcher"
         },
         {
             name: "Batman: Arkham Knight",
-            img: "image here"
+            img: "BecauseIAmBatman"
         },
     ]
 }
