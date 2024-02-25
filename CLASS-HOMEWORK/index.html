@@ -8,31 +8,48 @@
 </head>
 <body>
     <div class="block"></div>
-    <div id="die">
-        <label>---&nbsp &nbsp &nbsp Выберите кость с которой вы хотите играт &nbsp &nbsp &nbsp---</label>
-    </div>
-    <div class="buttons">
-        <button id="D4">D4 (тетраэдр)</button>
-        <img src="images/D4.jpg">
-        <button id="D6">D6 (куб)</button>
-        <img src="images/D6.jpg">
-        <button id="D8">D8 (октаэдр)</button>
-        <img  src="images/D8.jpg">
-        <button id="D12">D12 (додекаэдр)</button>
-        <img src="images/D12.jpg">
-        <button id="D20">D20 (икосаэдр)</button>
-        <img src="images/D20.jpg">
-    </div>
-    <div id="Times">
-        <label>---&nbsp &nbsp &nbsp Сколько раз вы хотите бросить кости: &nbsp &nbsp &nbsp---</label>
-    </div>
+    <div id="AllBefore">
+        <div id="die">
+            <label>---&nbsp &nbsp &nbsp Выберите кость с которой вы хотите играт &nbsp &nbsp &nbsp---</label>
+        </div>
+        <div class="buttons">
+            <button id="D4">D4 (тетраэдр)</button>
+            <img src="images/D4.jpg">
+            <button id="D6">D6 (куб)</button>
+            <img src="images/D6.jpg">
+            <button id="D8">D8 (октаэдр)</button>
+            <img  src="images/D8.jpg">
+            <button id="D12">D12 (додекаэдр)</button>
+            <img src="images/D12.jpg">
+            <button id="D20">D20 (икосаэдр)</button>
+            <img src="images/D20.jpg">
+        </div>
+        <div id="Times">
+            <label>---&nbsp &nbsp &nbsp Сколько раз вы хотите бросить кости (не больше 10): &nbsp &nbsp &nbsp---</label>
+        </div>
 
-    <div id="times">
-        <input id="inputTimes">
-        <button id="Submit">Submit</button>
+        <div id="times">
+            <input id="inputTimes">
+            <button id="Submit">Submit</button>
+        </div>
+    </div>
+    <div class="block2"></div>
+
+    <div id="AllDecision">
+        
+        <div id="decision">
+            <label>&nbsp &nbsp &nbsp Как вы думаете какое число выпало: &nbsp &nbsp &nbsp</label>
+        </div>
+
+        <div id="decisionAnswer">
+            <input id="inputAnswer">
+            <button id="check">Check</button>
+            <button id="round">Next round</button>
+        </div>
     </div>
     
     <div id="view"></div>
+    <div id="view2"></div>
 
     <script src="index.js"></script>
 </body>
