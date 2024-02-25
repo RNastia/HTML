@@ -1,19 +1,21 @@
 const inputTimes = document.querySelector("#inputTimes");
 const pView = document.querySelector("#view");
 const pView2 = document.querySelector("#view2");
+const pView3 = document.querySelector("#view3");
+const pView4 = document.querySelector("#view4");
 const dies = document.querySelectorAll(".buttons>button");
-const button = document.querySelector('#Submit');
-const Answer = document.querySelectorAll("#inputAnswer");
+const button = document.querySelector('#submit');
+const inputAnswer = document.querySelector("#inputAnswer");
 const buttonCheck = document.querySelector('#check');
 const buttonRound = document.querySelector('#round');
 let selectedDie = null;
-
-
-console.log(dies);
+let times = 0;
+let i = 0;
+let score = 0;
+let allTries = 0;
 
 function diesMethods(e) {
     pView.innerHTML = "";
-    pView2.innerHTML = "";
     selectedDie = e.target.id;
 }
 
@@ -22,35 +24,52 @@ for (const die of dies) {
 }
 
 function submitMethod() {
-    const answers = [];
-
+    times = inputTimes.value;
+    i = 0;
     pView.innerHTML = "";
-    pView2.innerHTML = "";
-
-    const numberDie = +selectedDie.replace("D", "");
-
-    for (let x = 0; x < inputTimes.value; x++) {
-        if (inputTimes.value < 11){
-            const answer = Math.floor(Math.random() * numberDie) + 1;
-            answers.push(answer);
-        }
-        else {
-            mistake = `<p>!&nbsp Вы не можете ввести такое количество попыток &nbsp!</p>`
-            pView2.innerHTML = mistake;
-        }
-    }
-
-    console.log(answers);
-
-    let viewString = "";
-    for (let i = 0; i < answers.length; i++) {
-        viewString += `<p>Попытка номер:${i + 1}&nbspРезультат:${answers[i]}</p>`
-    }
-    console.log(viewString);
-
-    pView.innerHTML = viewString;
+    this.disabled = true;
+    buttonCheck.disabled = false;
 }
 
 button.addEventListener("click", submitMethod)
 
+function checkMethod() {
+    let viewString = "";
+
+    const numberDie = +selectedDie.replace("D", "");
+    const guessValue = +inputAnswer.value;
+
+    const result = Math.floor(Math.random() * numberDie) + 1;
+
+    const isLucky = guessValue === result;
+
+    const showYourGuess = isLucky ? "Вы угадали" : "Вы не угадали";
+
+    if (i < times) {
+        viewString = `<p>Попытка номер:${i}, Результат:${result} - ${showYourGuess}</p>`;
+        ++allTries;
+        if (isLucky) { ++score; }
+    } else {
+        viewString = "у вас закончились попытки";
+        this.disabled = true;
+    }
+
+    ++i;
+
+    pView.innerHTML += viewString;
+
+    pView2.innerHTML = `<p>Все ваши попытки: ${allTries}</p>`
+    pView3.innerHTML = `<p>Ваш счет:${score}</p>`
+    pView4.innerHTML = `<p>Процент угаданного: ${score / allTries * 100} </p>`
+}
+
+buttonCheck.addEventListener("click", checkMethod)
+
+function roundMethod() {
+    i = 0;
+    pView.innerHTML = "";
+    button.disabled = false;
+}
+
+buttonRound.addEventListener("click", roundMethod)
 

@@ -12,6 +12,7 @@ body {
     align-items: center;
 }
 
+
 .buttons>button {
     width: 180px;
     color: #f3ceaa;
@@ -19,6 +20,14 @@ body {
     border-width: 0.01px;
     border-color: #f6ebf9;
     cursor: pointer;
+}
+
+#check:disabled, #submit:disabled {
+    background-color: #2c2c43;
+}
+
+#check:disabled:hover, #submit:disabled:hover {
+    cursor: default;
 }
 
 #die {
@@ -51,25 +60,28 @@ img {
 
 }
 
-#Submit {
+#submit {
     color: #f3ceaa;
     background-color: #ba4b54;
     border-width: 0.01px;
     border-color: #f6ebf9;
     cursor: pointer;
 }
-#view{
+
+#view {
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    color:#c6b5a4;
+    color: #c6b5a4;
 }
 
-#view2{
+#view2 {
     text-align: center;
-    color:#ba4b54;
+    color: #ba4b54;
 }
-#decision{
+
+#decision {
     text-align: center;
     color: #f3ceaa;
     font-style: italic;
@@ -81,35 +93,44 @@ img {
     height: 1px;
     background-color: #ba4b54;
     margin-bottom: 25px;
-    margin-top: 25px;}
+    margin-top: 25px;
+}
 
-#decisionAnswer{
+#decisionAnswer {
     text-align: center;
 }
 
-#check{
+#check {
     background-color: #ba4b54;
     border-width: 0.01px;
     border-color: #f6ebf9;
     cursor: pointer;
     color: #f3ceaa;
-    margin:0 35px ;
+    margin: 0 35px;
     width: 100px;
-}
-#round{
-    background-color: #ba4b54;
-    border-width: 0.01px;
-    border-color: #f6ebf9;
-    cursor: pointer;
-    color: #f3ceaa;
-    width: 100px;
-}
-#AllDecision{
-    background-color: #171736;
-    padding:20px 0 ;
 }
 
-#AllBefore{
+#round {
+    background-color: #ba4b54;
+    border-width: 0.01px;
+    border-color: #f6ebf9;
+    cursor: pointer;
+    color: #f3ceaa;
+    width: 100px;
+}
+
+#AllDecision {
     background-color: #171736;
-    padding:20px 0 ;
+    padding: 20px 0;
+}
+
+#AllBefore {
+    background-color: #171736;
+    padding: 20px 0;
+}
+
+#views{
+    display: flex;
+    color: #ba4b54;
+    justify-content: space-around;
 }
