@@ -1,12 +1,12 @@
-body{
+body {
     margin: 0;
 }
 
-.body-light{
+.body-light {
     background-color: #c53030;
 }
 
-.body-dark{
+.body-dark {
     background-color: #151010;
 }
 
@@ -17,12 +17,13 @@ body{
 }
 
 
-#buttons{
+#buttons {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-#first{
+
+#first {
     width: 100%;
     height: 33px;
     border-width: 0.01px;
@@ -34,15 +35,15 @@ body{
     margin-left: 61px;
 }
 
-.color-dark{
+.color-dark {
     color: #151010;
 }
 
-.color-light{
+.color-light {
     color: #c0bec1;
 }
 
-#second{
+#second {
     background-color: #f6ebf9;
     border-width: 0.5 px;
     width: 197px;
@@ -51,16 +52,16 @@ body{
     margin-left: 61px;
 }
 
-.border-dark{
-    border-color:#c53030;
+.border-dark {
+    border-color: #c53030;
 }
 
-.border-light{
+.border-light {
     border-color: #151010;
 }
 
 
-#third{
+#third {
     border-width: 0.01px;
     border-color: #f6ebf9;
     width: 197px;
@@ -69,13 +70,13 @@ body{
     margin-left: 61px;
 }
 
-.block2{
+.block2 {
     width: 53%;
     height: 721px;
     background-color: #f6ebf9;
-    position:absolute;
-    left:21%;
-    top:81px;
+    position: absolute;
+    left: 21%;
+    top: 81px;
     padding: 25px;
     line-height: 31px;
 }
@@ -83,27 +84,33 @@ body{
 .block3 {
     width: 201px;
     height: 201px;
-    position:absolute;
-    right:5%;
-    top:93px;
+    position: absolute;
+    right: 5%;
+    top: 93px;
+    padding: 10px;
+    overflow: hidden;
 }
 
 
 .block4 {
     width: 201px;
     height: 201px;
-    background-color:#c53030;
-    position:absolute;
-    right:5%;
-    top:46%;
+    background-color: #c53030;
+    position: absolute;
+    padding: 10px;
+    right: 5%;
+    top: 46%;
 }
 
 .block5 {
+    overflow: hidden;
     width: 201px;
     height: 201px;
-    position:absolute;
-    right:5%;
-    top:79%;
+    padding: 10px;
+    background-color: #c53030;
+    position: absolute;
+    right: 5%;
+    top: 79%;
 }
 
 .dark {
@@ -111,19 +118,16 @@ body{
 }
 
 .light {
-    background-color:  #151010;
+    background-color: #151010;
 }
 
 .block6 {
-    width: 185px;
-    height: 185px;
-    background-color:#f6ebf9;
-    position:absolute;
-    right:5.5%;
-    top:47%;
+    width: 100%;
+    height: 100%;
+    background-color: #f6ebf9;
 }
 
-#ThatBoy{
+#ThatBoy {
     width: 231px;
     height: 259px;
     display: block;
@@ -131,36 +135,27 @@ body{
     margin: 10px 30px 1px 0;
 }
 
-#PaintingComunication{
-    width: 160px;
-    height: 160px;
-    position:absolute;
-    right:6.5%;
-    top:50%;
+#PaintingComunication {
+    padding-top: 45px;
+    margin: 0;
     font-size: 17px;
     text-align: center;
 }
 
-.text-dark{
+.text-dark {
     color: #c53030;
 }
 
-.text-light{
+.text-light {
     color: #151010;
 }
 
-#detectiv{
-    width: 169px;
-    height: 193px;
-    position:absolute;
-    right:6.1%;
-    top:13.3%;
+#detectiv {
+    width: 100%;
+
+
 }
 
-#detectiv2{
-    width: 169px;
-    height: 194px;
-    position:absolute;
-    right:6.1%;
-    top:79.4%;
+#detectiv2 {
+    width: 100%;
 }
