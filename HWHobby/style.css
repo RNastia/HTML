@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    transition-duration: 1s;
 }
 
 .body-light {
@@ -14,6 +15,8 @@ body {
 .block {
     width: 100%;
     height: 33px;
+
+    transition-duration: 1s;
 }
 
 
@@ -33,6 +36,7 @@ body {
     margin-bottom: 50px;
     margin-top: 121px;
     margin-left: 61px;
+    transition-duration:1s;
 }
 
 .color-dark {
@@ -68,6 +72,7 @@ body {
     height: 36px;
     margin-bottom: 50px;
     margin-left: 61px;
+    transition-duration: 1s;
 }
 
 .block2 {
@@ -89,6 +94,8 @@ body {
     top: 93px;
     padding: 10px;
     overflow: hidden;
+
+    transition-duration: 1s;
 }
 
 
@@ -100,6 +107,7 @@ body {
     padding: 10px;
     right: 5%;
     top: 46%;
+    transition-duration: 1s;
 }
 
 .block5 {
@@ -111,6 +119,7 @@ body {
     position: absolute;
     right: 5%;
     top: 79%;
+    transition-duration: 1s;
 }
 
 .dark {
@@ -152,8 +161,6 @@ body {
 
 #detectiv {
     width: 100%;
-
-
 }
 
 #detectiv2 {

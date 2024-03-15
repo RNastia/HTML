@@ -12,7 +12,10 @@
     <div class="block dark"></div>
     <div class="block2">
         <p>Рисование - это искусство выражения идей и чувств с помощью линий, форм и цветов.</p>
-        <img id="ThatBoy" src="images/boyForProgect.png">
+        <div class="containerImg"> 
+            <img id="ThatBoy" src="" alt="">
+        </div>
+
         <p>Часто в свободное время я рисую, это моё главное хобби, которое позволяет мне отдохнуть и отвлечься от
             проблем. Однако оно требует много времени, внимания и тренировки для достижения хороших результатов. Я
             начала интересоваться искусством ещё в детстве, что помогло мне в будущем добиться хороших результатов.
@@ -29,18 +32,16 @@
             взгляд, совершенно не интересует мнение её сотрудников, что также влияет на качество обучения. ) Лично мне
             очень повезло с преподавателем, она действительно любит свою работу и детей, которых обучает. За это я ей
             очень благодарна.</p>
-        <p>В общем, на данный момент мне нравится рисование, и я планирую развиваться в этом направлении и
-            совершенствовать свой стиль.</p>
+        <p>В общем, на данный момент мне нравится рисование, и я планирую развиваться в этом направлении совершенствовать свой стиль.</p>
     </div>
+    
     <div class="block3 dark">
         <img id="detectiv" src="images/image.png">
     </div>
 
     <div class="block4 dark">
         <div class="block6">
-            <p id="PaintingComunication" class="text-dark">Рисунок был одним из первых способов выражения и коммуникации
-                у
-                человечества </p>
+            <p id="PaintingComunication" class="text-dark">Рисунок был одним из первых способов выражения и коммуникации у человечества </p>
         </div>
     </div>
     <div class="block5 dark">
@@ -53,7 +54,7 @@
     <div id="buttons">
 
         <button onclick="theme(event)" id="first" class="dark color-dark">change color</button>
-        <button id="second" class="border-dark">change image</button>
+        <button onclick="onChangeImg(event)" id="second" class="border-dark">change image</button>
         <button id="third" class="dark color-dark">other hobby</button>
         <script src="index.js"></script>
     </div>
