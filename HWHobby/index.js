@@ -40,7 +40,7 @@ function theme() {
         text.classList.add("text-light");
 
     }
-    
+
     else {
         body.classList.remove("body-light");
         body.classList.add("body-dark");
@@ -64,43 +64,43 @@ function theme() {
     }
 }
 
-const listImages= [
+const listImages = [
     {
-        src:'images/boyForProgect.png',
-        nameImg:'boyForProgect'
+        src: 'images/boyForProgect.png',
+        nameImg: 'boyForProgect'
     },
     {
-        src:'images/detectiv3.png',
-        nameImg:'detectiv3'
-    },
-
-    {
-        src:'images/cat.jpg',
-        nameImg:'cat'
+        src: 'images/detectiv3.png',
+        nameImg: 'detectiv3'
     },
 
     {
-        src:'images/tcani.jpg',
-        nameImg:'tcani'
+        src: 'images/cat.jpg',
+        nameImg: 'cat'
+    },
+
+    {
+        src: 'images/tcani.jpg',
+        nameImg: 'tcani'
     }
 ];
 
 
-const setImg=currentDataImg => {
-    img.src=currentDataImg.src;
-    img.alt=currentDataImg.nameImg;
+const setImg = currentDataImg => {
+    img.src = currentDataImg.src;
+    img.alt = currentDataImg.nameImg;
 };
 
 setImg(listImages[0]);
 
-let count=0;
+let count = 0;
 
-function onChangeImg(){
-    if(count===(listImages.length)-1){
-        count=0;
+function onChangeImg() {
+    if (count === (listImages.length) - 1) {
+        count = 0;
     }
-    else{
-        count+=1;
+    else {
+        count += 1;
     }
     setImg(listImages[count]);
 }
